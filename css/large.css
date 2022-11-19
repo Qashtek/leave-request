@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clearFloats {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* FOR  BIG MONITORS AND BIG LAPTOP SCREENS */
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .container {
+    width: 100%;
+    max-width: 1920px;
+    /* height: 1080px; */
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* LEFT SIDE SECTION */
+  #leftSide {
+    width: 24%;
+    max-width: 392px;
+    height: 100%;
+    /* border: 1px solid aqua; */
+    position: relative;
+  }
+
+  /* ----------------------------- */
+  #logoHere {
+    width: 130px;
+    height: 72px;
+    border: 1px solid green;
+    position: absolute;
+    left: 37px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logoHere img {
+    width: 90%;
+    height: 90%;
+    /* margin: auto; */
+  }
+  /* ------------------------------- */
+  #navlinks {
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid yellow; */
+    position: absolute;
+    top: 25%;
+  }
+
+  .linkA {
+    width: 100%;
+    height: auto;
+    /* border: 1px dotted crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkA a {
+    width: 100%;
+    height: 100%;
+    /* background: #888; */
+    text-decoration: none;
+    color: #444;
+    padding: 10px 20px;
+    font-size: 1.4vw;
+  }
+
+  #Mobile-navlinks {
+    display: none;
+  }
+
+  .linkA a:hover {
+    background: rgba(1, 149, 59, 0.05);
+    border-right: 4px solid #01953b;
+    color: #01953b;
+  }
+
+  /* ------------------------------- */
+  #usernameBelow {
+    width: 100%;
+    height: auto;
+    /* border: 2px dashed #111; */
+    position: absolute;
+    bottom: 15%;
+  }
+
+  #usernameBelow .box {
+    width: 100%;
+    max-width: 333px;
+    height: 50%;
+    /* border: 1px solid blue; */
+    padding: 4px 15px;
+  }
+
+  .name > p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4a4a4a;
+  }
+
+  .skill > p {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .skill #greenDot {
+    color: #01953b;
+    font-size: 10px;
+  }
+
+  /* ------------------ */
+  .logOut {
+    width: 100%;
+    height: 6%;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logOut a {
+    width: 100%;
+    height: 100%;
+    /* background: #888; */
+    text-decoration: none;
+    color: #444;
+    padding: 10px 20px;
+  }
+
+  .logOut a:hover {
+    background: rgba(1, 149, 59, 0.05);
+    border-right: 4px solid #01953b;
+    color: #01953b;
+  }
+
+  /* RIGHT SIDE */
+
+  #rightSection {
+    width: 76%;
+    height: 100%;
+    /* border: 2px solid red; */
+    position: relative;
+    padding: 0 60px 0 20px;
+  }
+
+  .topheadingBox {
+    width: 100%;
+    height: 25%;
+    /* border: 2px dashed #01953B; */
+    position: relative;
+  }
+
+  .topheadingBox h1 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  .topRightIcons {
+    width: 300px;
+    height: 90px;
+    /* border: 2px solid aqua; */
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .iconBell {
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid #444; */
+    /* float: left; */
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #01953b;
+    background: #edf7f1;
+  }
+
+  .iconUser {
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid #444; */
+    border-radius: 50%;
+    position: absolute;
+    left: 190px;
+    top: 10px;
+    color: #4a4a4a;
+    background: #edf7f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .goBack {
+    width: 150px;
+    height: 50px;
+    /* border: 2px dashed rebeccapurple; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 12px 7px;
+  }
+
+  .backIcon {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #646464;
+  }
+
+  .goBack a {
+    text-decoration: none;
+    color: #848484;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .goBack a:hover {
+    color: #111;
+    font-weight: 500;
+  }
+
+  .mainBody {
+    width: 100%;
+    height: 70%;
+    /* border: 2px solid blue; */
+  }
+
+  .applyForLeave {
+    width: 100%;
+    height: 11%;
+    /* border: 1px solid firebrick; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .applyForLeave a {
+    padding: 8px 16px;
+    background-color: #01953b;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 0.9em;
+  }
+
+  .applyForLeave a:hover {
+    background: #111;
+    color: #fff;
+    box-shadow: 2px 2px 8px #7d7d7d;
+  }
+
+  .applyForLeave p {
+    color: #7d7d7d;
+    font-size: 0.9em;
+  }
+
+  .dashboard {
+    width: 100%;
+    /* height: 23%; */
+    height: auto;
+    /* border: 2px solid #444; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dashBoxes {
+    width: 32%;
+    /* height: 100%; */
+    height: auto;
+    border: 1px solid #d2d2d2;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .one {
+    margin-right: 16px;
+  }
+
+  .two {
+    margin-right: 16px;
+  }
+
+  .leftDash {
+    width: 70%;
+    /* width: auto; */
+    height: 100%;
+    /* border: 2px dashed yellow; */
+    padding: 4px;
+  }
+
+  .colorBox {
+    width: 15px;
+    height: 15px;
+    /* border: 1px solid #111; */
+    border-radius: 2px;
+  }
+
+  .dodger {
+    background: #b5e2fd;
+  }
+
+  .pink {
+    background: #ffba99;
+  }
+
+  .yellow {
+    background: #f8c512;
+  }
+
+  .leftDash > p:nth-child(2) {
+    /* font-size: 0.8em; */
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    color: #4a4a4a;
+  }
+
+  .leftDash > p:nth-child(3) {
+    font-size: 0.7em;
+    /* font-size: 1.3vw; */
+    color: #7d7d7d;
+  }
+
+  .rightDash {
+    width: 30%;
+    /* width: auto; */
+    min-width: 70px;
+    height: 100%;
+    /* border: 2px dashed yellow; */
+    display: grid;
+    place-items: center;
+  }
+
+  .progressRadar,
+  .progressRadar2,
+  .progressRadar3 {
+    width: 65px;
+    height: 65px;
+    background: green;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  .progressRadar::before,
+  .progressRadar2::before,
+  .progressRadar3::before {
+    width: 88%;
+    height: 88%;
+    border-radius: 50%;
+    background: #fff;
+    content: "";
+    position: absolute;
+  }
+
+  .progValue,
+  .progValue2,
+  .progValue3 {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+    position: absolute;
+  }
+
+  .leaveHistory {
+    width: 100%;
+    height: 63%;
+    border: 2px solid #d2d2d2;
+    margin-top: 15px;
+    padding-left: 15px;
+  }
+
+  .leaveHistory a {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid #111; */
+    border-collapse: collapse;
+  }
+
+  caption {
+    font-weight: 500;
+    text-align: left;
+    padding: 15px 8px;
+  }
+
+  tbody tr:nth-child(odd) {
+    background: #f2f2f2;
+  }
+
+  th {
+    width: auto;
+    /* border: 1px solid red; */
+    text-align: start;
+    padding: 7px;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #666666;
+  }
+
+  td {
+    width: auto;
+    /* border: 1px solid red; */
+    text-align: start;
+    padding: 7px;
+    font-size: 0.9em;
+    color: #666666;
+  }
+
+  tbody tr:hover {
+    border: 2px solid #01953b;
+  }
+
+  tbody td:hover {
+    color: #01953b;
+    font-weight: 500;
+    /* background: #b8b5b5; */
+  }
+}
